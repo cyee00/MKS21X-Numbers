@@ -4,6 +4,9 @@ public class RationalNumber extends RealNumber {
   public RationalNumber(double n,double d) {
     super(n);
   }
+  public String getRationalNumber() {
+    return r;
+  }
   public String toString() {
     return "RationalNumber: "+r;
   }
