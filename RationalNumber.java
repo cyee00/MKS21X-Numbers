@@ -7,4 +7,10 @@ public class RationalNumber extends RealNumber {
   public String toString() {
     return "RationalNumber: "+r;
   }
+  public String compareRationalToRational(RationalNumber other) {
+    return "";
+  }
+  public String compareRationalToReal(RealNumber other) {
+    return "";
+  }
 }
