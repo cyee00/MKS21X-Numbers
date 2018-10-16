@@ -8,10 +8,16 @@ public class RationalNumber extends RealNumber
   */
   public RationalNumber(int nume, int deno){
     super(0);//this value is ignored!
+    numerator = nume;
+    denominator = deno;
+    if (denominator==0){
+      numerator = 0;
+      denominator = 0;
+    }
   }
 
   public double getValue(){
-    return 0;//???
+    return 1.0*numerator/denominator;
   }
 
   /**
@@ -102,4 +108,4 @@ public class RationalNumber extends RealNumber
   public RationalNumber subtract(RationalNumber other){
     return null;
   }
-} 
+}
