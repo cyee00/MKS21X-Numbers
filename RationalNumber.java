@@ -12,7 +12,7 @@ public class RationalNumber extends RealNumber
     denominator = deno;
     if (denominator==0){
       numerator = 0;
-      denominator = 0;
+      denominator = 1;
     }
   }
 
@@ -24,25 +24,32 @@ public class RationalNumber extends RealNumber
   *@return the numerator
   */
   public int getNumerator(){
-    return 0;
+    return numerator;
   }
   /**
   *@return the denominator
   */
   public int getDenominator(){
-    return 0;
+    return denominator;
   }
   /**
   *@return a new RationalNumber that has the same numerator
   *and denominator as this RationalNumber but reversed.
   */
   public RationalNumber reciprocal(){
-    return null;
+    if (numerator==0){
+      return new RationalNumber(0,1);
+    }
+    return new RationalNumber(denominator,numerator);
   }
   /**
   *@return true when the RationalNumbers have the same numerators and denominators, false otherwise.
   */
   public boolean equals(RationalNumber other){
+    if (numerator==other.getNumerator&&
+    denominator==other.getDenominator) {
+      return true;
+    }
     return false;
   }
 
