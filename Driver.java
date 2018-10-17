@@ -47,7 +47,7 @@ public class Driver {
     System.out.print("Rational Number d (should print 0): ");
     System.out.println(d);
     System.out.println("----------");
-/*
+
     System.out.print("'RealNumber' representation of a (should print 0.5): ");
     System.out.println(a.getValue());
     System.out.print("'RealNumber' representation of b (should print 0.25): ");
@@ -90,7 +90,6 @@ public class Driver {
     System.out.println(a.multiply(c));
     System.out.print("a / c (should print 1): ");
     System.out.println(a.divide(c));
-*/
   }
 
 }
