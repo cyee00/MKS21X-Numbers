@@ -14,6 +14,7 @@ public class RationalNumber extends RealNumber
       numerator = 0;
       denominator = 1;
     }
+    this.reduce();
   }
 
   public double getValue(){
@@ -58,6 +59,9 @@ public class RationalNumber extends RealNumber
   *@return the value expressed as "3/4" or "8/3"
   */
   public String toString(){
+    if (numerator==0||denominator==0) {
+      return "0";
+    }
     return ""+numerator+"/"+denominator;
   }
 
